@@ -5,8 +5,27 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: rgba(0, 255, 128, 0.041);
 }
-
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(0, 90, 20);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+hr {
+  border: 0;
+  margin: 1rem 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
 .markdown {
   padding: 4rem;
   display: grid;
@@ -14,24 +33,27 @@ body {
 }
 .input {
   border-color: transparent;
+  color: rgb(18, 63, 0);
   border-radius: 1rem;
   font-size: 1.2rem;
   line-height: 2;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 228, 49, 0.2);
   min-height: 30vh;
 }
 .input,
 .result {
   padding: 1rem 2rem;
+  line-height: 2;
 }
 
 @media screen and (min-width: 992px) {
   .markdown {
-    min-height: 100vh;
+    min-height: 80vh;
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
   }
 }
+
 /* unique styles */
 img {
   width: 200px;
